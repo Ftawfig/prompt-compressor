@@ -1,0 +1,2 @@
+gradio==4.19.1
+llmlingua==0.1.5
