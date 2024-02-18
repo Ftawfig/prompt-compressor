@@ -100,4 +100,4 @@ with gr.Blocks(title="SEO Notebook Promp Compressor", css=custom_css, theme=gr.t
         ]
     )
 
-iface.launch()
+iface.launch(server_port=80)
