@@ -1,3 +1,4 @@
+from fastapi import FastAPI
 import gradio as gr
 from llmlingua import PromptCompressor
 
@@ -100,4 +101,7 @@ with gr.Blocks(title="SEO Notebook Promp Compressor", css=custom_css, theme=gr.t
         ]
     )
 
-iface.launch(server_port=80)
+
+app = FastAPI()
+
+app = gr.mount_gradio_app(app, iface, path='/')
