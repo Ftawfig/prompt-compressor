@@ -103,8 +103,8 @@ with gr.Blocks(title="SEO Notebook Promp Compressor", css=custom_css, theme=gr.t
 
 app = FastAPI()
 
-@app.get("/")
-def read_main():
-    return {"message": "This is your main app"}
+#@app.get("/")
+#def read_main():
+#    return {"message": "This is your main app"}
 
 app = gr.mount_gradio_app(app, iface, path='/')
