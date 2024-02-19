@@ -14,10 +14,9 @@ on:
 env:
   AZURE_WEBAPP_NAME: prompt-compressor     # set this to your application's name
   WORKING_DIRECTORY: '.'        # set this to the path to your path of working directory inside github repository, defaults to the repository root
-  PYTHON_VERSION: '3.12'        # set the version to use
+  PYTHON_VERSION: '3.10'        # set the version to use
   STARTUP_COMMAND: ''           # set this to the startup command required to start the gunicorn server. default it is empty
 
-name: Build and deploy Python app
 jobs:
  build-and-deploy:
   runs-on: ubuntu-latest
