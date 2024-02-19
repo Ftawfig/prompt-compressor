@@ -41,7 +41,9 @@ jobs:
   # Azure login
   - uses: azure/login@v1
     with:
-     creds: ${{ secrets.AZURE_CREDENTIALS_GITHUB_SECRET }}
+      client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_382431BFDEB144499E666836E11D5EB5 }}
+      tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_93FBF19D890541749B40900302727934 }}
+      subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_962CE1C073AA43A8AABFC5CC7E662E7D }}
   - uses: azure/appservice-settings@v1
     with:
      app-name: ${{ env.AZURE_WEBAPP_NAME }}
