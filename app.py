@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 import gradio as gr
 from llmlingua import PromptCompressor
+from soft_snb import Soft_SNB
 
 llm_lingua = PromptCompressor("lgaalves/gpt2-dolly", device_map="cpu")
 
@@ -55,7 +56,7 @@ custom_css = """
     }
 """
 
-with gr.Blocks(title="SEO Notebook Promp Compressor", css=custom_css, theme=gr.themes.Soft_SNB()) as iface:
+with gr.Blocks(title="SEO Notebook Promp Compressor", css=custom_css, theme=Soft_SNB()) as iface:
     gr.Markdown(intro)
 
     with gr.Row():
