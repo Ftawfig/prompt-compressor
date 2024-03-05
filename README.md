@@ -11,4 +11,4 @@
     docker tag prompt-compressor northamerica-northeast2-docker.pkg.dev/prompt-compressor/prompt-compressor-ar/prompt-compressor
 
 ### Push to Artifact Repository
-    docker push prompt-compressor northamerica-northeast2-docker.pkg.dev/prompt-compressor/prompt-compressor-ar/prompt-compressor
+    docker push northamerica-northeast2-docker.pkg.dev/prompt-compressor/prompt-compressor-ar/prompt-compressor
