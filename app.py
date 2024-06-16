@@ -62,7 +62,7 @@ custom_css = """
     }
 """
 
-with gr.Blocks(title="SEO Notebook Promp Compressor", css=custom_css, theme=Soft_SNB()) as iface:
+with gr.Blocks(title="SEO Notebook Prompt Compressor", css=custom_css, theme=Soft_SNB()) as iface:
     gr.Markdown(intro)
 
     with gr.Row():

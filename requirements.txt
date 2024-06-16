@@ -1,5 +1,5 @@
 fastapi==0.109.2
-gradio==4.16
+gradio==3.50.2
 llmlingua==0.1.5
 uvicorn
 gunicorn
